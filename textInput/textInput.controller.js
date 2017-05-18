@@ -1,10 +1,10 @@
 angular.module('gettersSetters')
 .controller('TextInputController', TextInputController)
 
-function TextInputController() {
+function TextInputController(NameService) {
 	const vm = this
 
 	vm.submit = (name) => {
-		vm.name = name
+		NameService.set(name)
 	}
 }
