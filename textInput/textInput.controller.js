@@ -4,5 +4,7 @@ angular.module('gettersSetters')
 function TextInputController() {
 	const vm = this
 
-	vm.test = 'hello g46'
+	vm.submit = (name) => {
+		vm.name = name
+	}
 }
